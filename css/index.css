@@ -1,3 +1,24 @@
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: '.';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+	font-size: 0;
+}
+
 .navbar-default {
 	background: #fff;
 }
@@ -8,7 +29,7 @@
 
 .navbar-default .navbar-nav>li>a {
 	height: 70px;
-	line-height: 50px;
+	line-height: 60px;
 }
 
 .nav-logo >img {
@@ -26,6 +47,18 @@
     color: #1f2944;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.nav>li>a {
+		/*font-size: 16px !important;
+		padding: 10px 16px !important;*/
+	}
+	
+	.index_con {
+		width: 100% !important;
+		padding: 0 40px !important;
+	}
+}
+
 .nav>li>a {
 	padding: 10px 20px;
 	font-size: 18px;
@@ -40,9 +73,13 @@
 	display: block;
 	position: absolute;
 	top: 50%;
-	margin-top: -10px;
+	margin-top: -6px;
 	left: -6px;
 	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.home {
+	color: #ff932e !important;
 }
 
 .navbar-default .navbar-nav>li>a.home:before {
@@ -83,10 +120,41 @@
 	.nav-logo {
 		display: none;	
 	}
+	
+	.navbar-default .navbar-nav>li>a:before {
+		width: 0;
+		height: 0;
+	}
+	
+	.sypt >span,
+	.index_nav >li:nth-last-child(2),
+	.index_nav >li:last-child {
+		display: none !important;
+	}
+	
+	.index_nav >li >a,
+	.navbar-default .navbar-nav>li>a.home {
+		color: #fff !important;
+	}
+	
+	.index_nav {
+		width: 250px;
+	}
+	
+	.index_nav >li:first-child {
+		background: #585858;
+	}
+	
+	.index_nav >li {
+		height: 80px;
+		background: #292929;
+		border-bottom: 1px solid #585858;
+	}
 }
 
 .nav-ico {
 	float: left;
+	margin: 14px 30px;
 }
 
 .nav_tab {
@@ -111,3 +179,125 @@
 	margin-left: 10px;
 }
 
+.nav-ico .icon-bar {
+	background: #ff932e !important;
+}
+
+section.banner {
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+	section.banner {
+		margin-top: 60px;
+	}
+	
+	section.game_list {
+		display: none;
+	}
+}
+
+.navbar {
+	border: none;
+}
+
+section.dial {
+	margin: 80px 0;
+	position: relative;
+	
+}
+
+section.dial .dial_box {
+	position: relative;
+}
+
+.dial_box .record {
+	display: block;
+	width: 12.5%;
+    height: 7%;
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
+
+.dial_box .name_list {
+	width: 26%;
+    height: 27%;
+    position: absolute;
+    top: 35%;
+    right: 16%;
+    background: #55b7e9;
+}
+
+@media only screen and (max-width: 768px) {
+	.dial_box .name_list {
+		width: 25%;
+		right: 18%;
+	}
+	
+	section.dial {
+		margin: 0;
+	}
+	
+	section.banner {
+		margin-bottom: 10px;
+	}
+}
+
+.name_list >ul {
+	height: 100%;
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.name_list >ul >li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.name_list >ul >li:before {
+	content: '';
+	width: 8px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    background: #fff;
+    transform: rotate(60deg);
+}
+
+.name_list >ul >li >p {
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	margin: 0;
+	font-family: cursive;
+	
+}
+
+/*@media only screen and (max-width: 768px) {
+	html {
+		font-size: calc(100vw/7.5);
+	}
+	
+	.name_list >ul >li >p {
+		font-size: .14rem;
+	}
+	
+	.name_list >ul >li:before {
+		width: .08rem;
+	    height: .08rem;
+	    top: .05rem;
+	    left: -.15rem;
+	}
+	
+	.name_list >ul >li >p {
+		height: .18rem;
+		line-height: .18rem;
+		
+	}
+}*/
