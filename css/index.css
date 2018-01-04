@@ -1,0 +1,113 @@
+.navbar-default {
+	background: #fff;
+}
+
+.nav-logo {
+	height: 70px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	height: 70px;
+	line-height: 50px;
+}
+
+.nav-logo >img {
+	max-height: 100%;
+	float: left;
+	margin-right: 16px;
+}
+
+.nav-logo >span {
+	float: left;
+    display: block;
+    height: 70px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #1f2944;
+}
+
+.nav>li>a {
+	padding: 10px 20px;
+	font-size: 18px;
+	color: #1f2944 !important;
+	position: relative;
+}
+
+.navbar-default .navbar-nav>li>a:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: -6px;
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.home:before {
+	background: url(../images/home.png);
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.hdzx:before {
+	background: url(../images/huod.png);
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.flzx:before {
+	background: url(../images/flzx.png);
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.sypt:before {
+	background: url(../images/game.png);
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.grzx:before {
+	background: url(../images/grzx.png);
+	background-size: 100% 100%;
+}
+
+.navbar-default .navbar-nav>li>a.sypt >span {
+	margin-left: 12px;
+	color: #1f2944;
+}
+
+.navbar-default .navbar-nav>li:last-child a {
+	padding: 10px 0;
+} 
+
+@media only screen and (max-width: 768px) {
+	.nav-logo {
+		display: none;	
+	}
+}
+
+.nav-ico {
+	float: left;
+}
+
+.nav_tab {
+	width: 140px;
+	float: right;
+	border: none;
+}
+
+.nav_tab li {
+	list-style: none;
+	width: 50%;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+}
+
+.nav_tab li >a {
+	color: #000;
+}
+
+.nav_tab li >a +span {
+	margin-left: 10px;
+}
+
