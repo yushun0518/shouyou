@@ -22,7 +22,7 @@
 
 				    <ul class="navbar-toggle nav_tab" data-toggle="collapse" data-target=".navbar-collapse">
 				    	<li><a href="#">登录</a><span>|</span></li>
-				    	<li><a href="#" class="active">注册</a></li>
+				    	<li><a href="#">注册</a></li>
 				    </ul>
 					<a href="index.html" class="navbar-brand nav-logo">
 						<img src="images/logo.png"/>
@@ -34,23 +34,23 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right index_nav">
 						<li>
-							<a href="#" class="home home1">首页</a>
+							<a href="#" class="home">首页</a>
 						</li>
 						<li>
 							<a href="#" class="hdzx">活动中心</a>
 						</li>
 						<li>
-							<a href="#" class="flzx">福利中心</a>
+							<a href="#" class="flzx sele">福利中心</a>
 						</li>
 						<li>
-							<a href="#" class="sypt">手游平台</a>
+							<a href="#" class="sypt">手游平台<span>|</span></a>
 						</li>
 						<li>
-							<a href="#" class="signin sele">注册</a>
+							<a href="#" class="grzx">个人中心</a>
 
 						</li>
 						<li>
-							<a href="#" class="signup">登录</a>
+							<a href="#" class="exit">退出</a>
 						</li>
 					</ul>
 				</div>
@@ -58,34 +58,45 @@
 			</div>
 
 		</nav>
-	<section class="signin">
-		<form action="#" method="post" class="pc_sign">
-			<div class="user_info">
-				<h2>注册</h2>
-				<dl class="detail clearfix">
-					<dt class="required">用户名</dt>
-					<dd>
-						<input type="text" placeholder="请输入用户名" />
-					</dd>
-					<dt class="required">密码</dt>
-					<dd>
-						<input type="password" placeholder="请输入密码" />
-					</dd>
-					<dt class="required">手机号码</dt>
-					<dd>
-						<input type="tel" placeholder="请输入手机号" />
-					</dd>
-					<dt class="required">图形码</dt>
-					<dd class="yzm clearfix">
-						<input type="text" class="validate" />
-						<img src="images/yanzhm.png" class="fr img-responsive"/>
-						<p>看不清？点击图片换一张</p>
-					</dd>
-				</dl>
+	<section class="hy_info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col-sm-5 hy_img">
+					<img src="images/aqyhy.png" class="img-responsive"/>
+				</div>
+				<!--<div class="col-lg-1 col-md-1 col-sm-1">
+					
+				</div>-->
+				<div class="col-lg-7 col-md-7 col-sm-7 hy_detail">
+					<h3>精品推荐</h3>
+					<h2>爱奇艺vip会员白银月卡</h2>
+					<div class="hy_price hy_price_b">
+						<span>价 格</span>
+						<span class="red fz30">¥19.9</span>
+						<span>¥25</span>
+					</div>
+					<div class="hy_price">
+						<span>数 量</span>
+						<span class="red fz30">1</span>
+						<span>库存123件</span>
+					</div>
+					<div class="hy_button">
+						<a href="#">立即购买</a>
+						<p>此商品性质不支持7天无理由退货</p>
+					</div>
+				</div>
 			</div>
-			<!--<input type="button" value="立即注册" />-->
-			<button type="submit" class="submit">立即注册</button>
-		</form>
+		</div>
+	</section>
+	<section class="prod_detail">
+		<div class="container">
+			<h2 class="p_title"><span>商品详情</span></h2>
+			<div class="row">
+				<div class=" prod_info">
+					<img src="images/xuzhi.png" class="img-responsive"/>
+				</div>
+			</div>
+		</div>
 	</section>
 	<div class="footer">
 		<ul class="link">
@@ -106,21 +117,6 @@
 		<p class="copy_right pc_show">联系电话：021-61728488 邮箱：hr@magicoranges.com  地址：上海市虹口区塘沽路463号华虹国际大厦11楼</p>
 	</div>
 	<script src="js/jquery-3.1.0.min.js"></script>
-	<!--<script src="js/bootstrap.min.js"></script>-->
-	<script src="js/swiper.min.js"></script>
-    <<script src="js/index.js"></script>
-    <script>
-    	var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: 2500,
-            autoplayDisableOnInteraction: false
-        });
-
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

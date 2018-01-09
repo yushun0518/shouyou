@@ -14,12 +14,12 @@
 			<div class="container index_con">
 				<!--小屏幕导航按钮和logo-->
 				<div class="navbar-header">
-					<button class="navbar-toggle nav-ico" data-toggle="collapse" data-target=".navbar-collapse" id="nav-ico"> 
+					<button class="navbar-toggle nav-ico" data-toggle="collapse" data-target=".navbar-collapse" id="nav-ico">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 				    </button>
-				    
+
 				    <ul class="navbar-toggle nav_tab" data-toggle="collapse" data-target=".navbar-collapse">
 				    	<li><a href="#">登录</a><span>|</span></li>
 				    	<li><a href="#">注册</a></li>
@@ -47,7 +47,7 @@
 						</li>
 						<li>
 							<a href="#" class="grzx">个人中心</a>
-							
+
 						</li>
 						<li>
 							<a href="#" class="exit">退出</a>
@@ -195,6 +195,7 @@
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<!--<script src="js/bootstrap.min.js"></script>-->
 	<script src="js/swiper.min.js"></script>
+    <<script src="js/index.js"></script>
     <script>
     	var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
@@ -206,16 +207,7 @@
             autoplay: 2500,
             autoplayDisableOnInteraction: false
         });
-        
-        $(function(){
-        	$('#nav-ico').click(function(){
-        		$('.navbar-collapse').toggle();
-        	});
-        	
-        	$('.index_nav >li >a').click(function(){
-        		$('.navbar-collapse').hide();
-        	})
-        })
+
     </script>
 </body>
 </html>
