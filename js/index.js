@@ -107,7 +107,60 @@ $(function(){
 		
 		$('h3.h_tip >i').click(function(){
 			$(this).next('.tips').toggle();
+		});
+		
+		$('#loadEmail').click(function(){
+			$(this).closest('form').hide().next().show();
+		});
+		
+		$('.confirm >button').click(function(){
+			$(this).closest('.confirm ').hide().next().show();
 		})
+		
+	})();
+	
+	
+	(function(){
+		//轮播图
+		var num = 0;
+		$('span.next').click(function(){
+			num++;
+			if(num>2){
+				num = 0;
+			}
+			$('.w_box >ul >li').eq(num).fadeIn(1000).siblings().hide();
+			$(this).closest('.w_banner').find('>ol >li').eq(num).addClass('active').siblings().removeClass('active');
+		});
+		
+		$('span.prev').click(function(){
+			num--;
+			if(num==-1){
+				num = 2;
+			}
+			$('.w_box >ul >li').eq(num).fadeIn(1000).siblings().hide();
+			$(this).closest('.w_banner').find('>ol >li').eq(num).addClass('active').siblings().removeClass('active');
+		});
+		
+		function autoPlay(){
+			num++;
+			if(num>2){
+				num = 0;
+			}
+			$('.w_box >ul >li').eq(num).fadeIn(2000).siblings().hide();
+			$('.w_banner').find('>ol >li').eq(num).addClass('active').siblings().removeClass('active');
+		}
+		
+		timer = setInterval(autoPlay,2000);
+		
+		$('.w_banner').hover(
+			function(){
+				clearInterval(timer);
+			},
+			function(){
+				setInterval(autoPlay,2000);
+			}
+		)
+		
 	})();
 	
 	

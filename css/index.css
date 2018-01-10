@@ -2151,7 +2151,7 @@ section.hottj .weal_info {
 /*个人中心*/
 .order {
 	background: #f8f8f8;
-	padding-top: .26rem;
+	padding: .26rem 0;
 }
 
 .order .order_l {
@@ -2274,6 +2274,7 @@ section.hottj .weal_info {
 	border-radius: .06rem;
 	padding: .26rem .4rem;
 	display: none;
+	min-height: 5.7rem;
 }
 
 .order .order_r >h3 {
@@ -2330,6 +2331,37 @@ section.hottj .weal_info {
 	line-height: 1.1rem;
 }
 
+.order .order_r .confirm >p {
+	font-size: .18rem;
+	height: 1.16rem;
+	line-height: 1.16rem;
+	color: #001422;
+}
+
+.order .order_r .succ >h2 {
+	height: 1.16rem;
+	line-height: 1.16rem;
+	color: #001422;
+	font-size: .4rem;
+	margin-top: .2rem;
+}
+
+.order .order_r .succ >p {
+	font-size: .24rem;
+	color: #001422;
+	height: .52rem;
+	line-height: .52rem;
+}
+
+.order .order_r .succ >a {
+	font-size: .24rem;
+	color: #001422;
+	height: .52rem;
+	line-height: .52rem;
+	display: block;
+	text-decoration: underline;
+}
+
 .order_r .emails .input:before {
 	content: '*';
     font-size: .32rem;
@@ -2355,7 +2387,9 @@ section.hottj .weal_info {
 	border: 1px solid #ff0000;
 }
 
-.order_r .emails button {
+.order_r .emails button,
+.order_r .confirm button,
+.order_r .succ button {
 	width: 4.14rem;
 	height: .56rem;
 	line-height: .56rem;
@@ -2369,6 +2403,14 @@ section.hottj .weal_info {
 	justify-content: center;
 }
 
+.order_r .confirm button {
+	margin: .3rem 0;
+}
+
+.order_r .confirm {
+	display: none;
+}
+
 .order_r h3.h_tip {
 	height: 1.36rem;
 	line-height: 1.36rem;
@@ -2376,7 +2418,7 @@ section.hottj .weal_info {
 	align-items: center;
 }
 
-.order_r h3 .tips {
+.order_r .tips {
 	width: 3.66rem;
 	background: #ebeeef;
 	margin-left: .4rem;
@@ -2384,7 +2426,35 @@ section.hottj .weal_info {
 	padding: .16rem .1rem .16rem .2rem;
 }
 
-.order_r h3 .tips i {
+.order_r .succ {
+	display: none;
+}
+
+.order_r .succ .tips {
+	display: none;
+	margin-left: 0;
+}
+
+.order_r .succ .fail {
+	height: 1rem;
+}
+
+.order_r .succ .fail >a {
+	text-decoration: underline;
+	color: #001422;
+	font-size: .2rem;
+}
+
+.order_r .succ .fail:hover .tips {
+	display: block;
+}
+
+.order_r .succ .tips >p >a {
+	font-size: .16rem;
+	text-decoration: underline;
+}
+
+.order_r .tips i {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -2397,7 +2467,7 @@ section.hottj .weal_info {
 	left: -.2rem;
 }
 
-.order_r h3 .tips >p {
+.order_r .tips >p {
 	line-height: .26rem;
 	color: #121a1e;
 	font-size: .12rem;
@@ -2443,7 +2513,7 @@ section.hottj .weal_info {
 
 /*个人中心*/
 .gy_service {
-	padding: 0 0 .4rem;
+	padding: .4rem 0;
 	
 }
 
@@ -2505,10 +2575,101 @@ section.hottj .weal_info {
 	margin-left: 1.42rem;
 }
 
+/*活动中心*/
+.empt {
+	height: 6.32rem;
+	background: #fff;
+}
+
+.wond {
+	height: 9.3rem;
+	padding-top: 2.66rem;
+	background: url(../images/hd_bg.png);
+	background-size: 100% 100%;
+}
+
+.w_banner {
+	height: 5.28rem;
+	padding: .66rem 1.4rem;
+	background: #f6f469;
+	position: relative;
+	box-shadow: .05rem .05rem .05rem #d3d1e5;
+}
+
+.w_banner .w_box {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: .1rem;
+	overflow: hidden;
+}
+
+.w_banner span.wbtn {
+	width: .88rem;
+	height: .72rem;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -.36rem;
+	cursor: pointer;
+}
+
+.w_banner span.next {
+	right: 0;
+	margin-right: .2rem;
+	background: url(../images/next.png);
+	background-size: 100% 100%;
+}
 
 
+.w_banner span.prev {
+	left: 0;
+	margin-left: .2rem;
+	background: url(../images/prev.png);
+	background-size: 100% 100%;
+}
 
+.w_banner .w_box >ul {
+	height: 100%;
+	position: relative;
+}
 
+.w_banner .w_box >ul >li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.w_banner .w_box >ul >li:first-child {
+	display: block;
+}
+
+.w_banner >ol {
+	width: 100%;
+	height: .56rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.w_banner >ol >li {
+	width: .18rem;
+	height: .18rem;
+	margin: 0 .2rem;
+	border: 1px solid #6b6a39;
+	transform: rotate(45deg);
+}
+
+.w_banner >ol >li.active {
+	background: #6b6a39;
+}
+
+/*商务合作*/
+.joint {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 
 
 
