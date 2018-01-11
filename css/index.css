@@ -669,6 +669,32 @@ section.weal a.enter {
 	background-size: 100% 100%;
 }
 
+.pc_sign .user_info1>h2:before {
+	background: url(../images/phone.png);
+	background-size: 100% 100%;
+}
+
+.pc_sign .user_info2>h2:before {
+	background: url(../images/login.png);
+	background-size: 100% 100%;
+}
+
+.pc_sign .user_info3>h2:before {
+	background: url(../images/password.png);
+	background-size: 100% 100%;
+}
+
+.pc_sign .btns {
+	height: .46rem;
+	line-height: .46rem;
+}
+
+.pc_sign .btns >a {
+	color: #2baeef;
+	font-size: .18rem;
+	text-decoration: underline;
+}
+
 .user_info .detail {
 	padding: 0 .8rem 0 .7rem;
 }
@@ -704,6 +730,52 @@ section.weal a.enter {
 	height: auto;
 }
 
+.signin1 {
+	padding-top: 0 !important;
+}
+
+.signin1 .sign_ul {
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 6.42rem;
+	margin: 0 auto;
+}
+
+.signin1 .sign_ul >li {
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: .3rem;
+	color: #939393;
+	
+}
+
+.signin1 .sign_ul >li.active span {
+	padding: .02rem 0;
+	color: #42b5f0;
+	border-bottom: .03rem solid #42b5f0;
+}
+
+.user_info .detail dd.s_yzm {
+	position: relative;
+}
+
+.user_info .detail dd.s_yzm .times {
+	width: .94rem;
+	height: .32rem;
+	line-height: .32rem;
+	text-align: center;
+	display: block;
+	position: absolute;
+	right: .06rem;
+	top: 50%;
+	margin-top: -.16rem;
+	font-size: .18rem;
+	background: #bcbcbc;
+	color: #fff;
+	border-radius: .06rem;
+}
+
 .user_info .detail dd.yzm p {
 	font-size: .12rem;
 	color: #bfbebe;
@@ -733,6 +805,10 @@ section.weal a.enter {
 	margin-top: .2rem;
 }
 
+.pc_sign1 {
+	display: none;
+}
+
 .pc_sign .submit {
 	width: 100%;
 	height: .66rem;
@@ -742,6 +818,7 @@ section.weal a.enter {
 	background: #2baeef;
 	border: none;
 	border-radius: 0.08rem;
+	margin-top: .2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2074,6 +2151,10 @@ section.hottj .weal_info {
 	background-size: 100% 100%;
 	margin-right: .12rem;
 }
+.lc_buy .list .ts_info .t_pay i.fail {
+	background: url(../images/fail.png);
+	background-size: 100% 100%;
+}
 
 .lc_buy .list .ts_info .times {
 	height: .98rem;
@@ -2263,10 +2344,78 @@ section.hottj .weal_info {
 	color: #001422;
 }
 
-.order .list_tab tr
+.l_detail {
+	width: 9.04rem;
+	height: 2.26rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -4.52rem;
+	border: 1px solid #ff8f21;
+	background: #fff;
+	top: 50%;
+	margin-top: -1.13rem;
+	padding: .36rem .26rem;
+	display: none;
+}
 
 .order .list_tab tr.title {
 	border-bottom: .02rem solid #8ba6b8;
+}
+
+.l_detail >img {
+	width: 2.16rem;
+	height: 1.46rem;
+	display: block;
+	float: left;
+	border: 1px solid #ff8f21;
+}
+
+.l_detail .l_info {
+	width: 6rem;
+	height: 1.46rem;
+}
+
+.l_detail .l_info >p {
+	font-size: .26rem;
+	color: #2e1300;
+	height: .44rem;
+	line-height: .44rem;
+	text-align: left;
+}
+
+.l_detail .close,
+.lv1 .exit .close {
+	width: .22rem;
+	height: .22rem;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/close.png);
+	background-size: 100% 100%;
+}
+
+.lv,
+.lv1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+	display: none;
+}
+
+.h100 {
+	height: 100%;
+	overflow: hidden;
+}
+
+.order .list_tab tr.ok td .l_info >p >i {
+	width: .28rem;
+	height: .14rem;
+	display: inline-block;
+	background: url(../images/see.png);
 }
 
 .order .order_r {
@@ -2371,6 +2520,18 @@ section.hottj .weal_info {
     position: relative;
 }
 
+.order_r .emails .input1:before {
+	float: left !important;
+}
+
+.p2 {
+	display: none;
+}
+
+.htauto {
+	height: auto !important;
+}
+
 .order_r .emails .input input {
 	width: 5rem;
 	height: .6rem;
@@ -2381,6 +2542,30 @@ section.hottj .weal_info {
 	border-radius: .04rem;
 	text-indent: .16rem;
 	outline: none;
+}
+
+/*.order_r .emails .input1 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}*/
+
+.order_r .emails .input input.yzm {
+	width: 3.4rem;
+	position: relative;
+	top: 50%;
+	margin-top: -.3rem;
+	border-radius: .06rem 0 0 .06rem;
+}
+
+.order_r .emails .input .send {
+	width: 1.6rem;
+    height: .6rem;
+    border: none;
+    border-radius: 0 .06rem .06rem 0;
+    position: relative;
+    top: 50%;
+    margin-top: -.3rem;
 }
 
 .order_r .emails .input input:focus {
@@ -2671,5 +2856,227 @@ section.hottj .weal_info {
 	padding-right: 1.5rem;
 }
 
+.joint p.tip {
+	color: #555454;
+	height: auto;
+	line-height: .76rem;
+	font-size: .28rem;
+	text-align: left;
+	text-indent: 2em;
+}
+
+.joint .cbox {
+	padding: 0 .56rem;
+}
+
+.joint .cbox >h2 {
+	font-size: .3rem;
+	color: #555454;
+	height: 1.02rem;
+	line-height: 1.02rem;
+	padding-left: .18rem;
+	position: relative;
+}
+
+.joint .cbox >h2:before {
+	content: '';
+	width: 0;
+	height: .3rem;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -.15rem;
+	left: 0;
+	border-left: .04rem solid #ff6610;
+}
+
+.joint .cbox >img {
+	width: 2.4rem;
+	height: 2.3rem;
+	display: block;
+}
+
+.joint .cbox >p {
+	height: .6rem;
+	line-height: .6rem;
+	font-size: .26rem;
+	color: #555454;
+}
+
+/*站内信详情页*/
+.gy_service .hf_list {
+	padding: 0 1.5rem;
+}
+
+.gy_service .hf_list >li {
+	padding: 0 .62rem;
+	background: #fff;
+	margin-bottom: .2rem;
+	position: relative;
+}
+
+.gy_service .hf_list >li >h3 {
+	color: #1f2944;
+	font-size: .24rem;
+	height: .6rem;
+	line-height: .6rem;
+}
+
+.gy_service .hf_list >li input {
+	display: none;
+}
+
+.gy_service .hf_list >li input +label {
+	width: .24rem;
+	height: .24rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -.12rem;
+	left: .12rem;
+	background: url(../images/check_n.png);
+}
+
+.gy_service .hf_list >li input:checked +label {
+	background: url(../images/checked.png);
+}
+
+.gy_service .hf_list >li >h3 i {
+	width: .1rem;
+    height: .1rem;
+    background: #ff8f21;
+    display: inline-block;
+    margin-left: .16rem;
+    border-radius: 50%;
+    position: relative;
+    top: -.02rem;
+}
+
+.gy_service .hf_list >li.message >h3,
+.gy_service .hf_list >li.message >p {
+	color: #79808a;
+}
+
+.gy_service .hf_list >li >p {
+	font-size: .2rem;
+	color: #1f2944;
+	height: .6rem;
+	line-height: .6rem;
+}
+
+.gy_service .operat {
+	height: 1.3rem;
+	line-height: 1rem;
+	padding: 0 1.5rem;
+}
+
+.gy_service .operat .o_btn {
+	color: #1f2944;
+	width: 1rem;
+	height: .5rem;
+	background: #fff;
+	font-size: .18rem;
+	text-align: center;
+	line-height: .5rem;
+	margin-right: .24rem;
+	cursor: pointer;
+}
 
 
+/*支付成功*/
+.links {
+	height: .82rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links >a {
+	font-size: .28rem;
+	color: #3e424d;
+	margin-right: 1.68rem;
+	padding-left: .52rem;
+	position: relative;
+}
+
+.links >a:last-child {
+	margin-right: 0;
+}
+
+.links >a:hover {
+	color: #ff9832;
+}
+
+.links >a:before {
+	content: '';
+	font-size: .32rem;
+	color: #3e424d;
+	position: absolute;
+	left: 0;
+	width: .15rem;
+	height: .22rem;
+	top: 50%;
+	margin-top: -.11rem;
+	background: url(../images/right.png);
+	background-size: 100% 100%;
+}
+
+/*退出支付弹窗*/
+.exit_pay {
+	height: 6.02rem;
+}
+
+.lv1 {
+	display: block;
+}
+
+.lv1 .exit {
+	width: 6.56rem;
+	height: 2.3rem;
+	border: 1px solid #ff8f21;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	margin-left: -3.28rem;
+}
+
+.lv1 .exit >h2 {
+	height: .76rem;
+	line-height: .76rem;
+	font-size: .28rem;
+	color: #2e1300;
+	text-align: center;
+	
+}
+
+.lv1 .exit >p {
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .2rem;
+	color: #6b6b6b;
+	text-align: center;
+}
+
+.lv1 .btns {
+	height: .84rem;
+}
+
+.lv1 .btns >a {
+	width: 1.5rem;
+	height: .4rem;
+	text-align: center;
+	line-height: .4rem;
+	font-size: .18rem;
+	display: block;
+	margin: 0 .1rem;
+}
+
+.lv1 .btns >a.think {
+	background: #ff8f21;
+	color: #fff;
+}
+
+.lv1 .btns >a.leave {
+	color: #6b6b6b;
+	border: 1px solid #6b6b6b;
+}

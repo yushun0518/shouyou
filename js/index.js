@@ -114,8 +114,48 @@ $(function(){
 		});
 		
 		$('.confirm >button').click(function(){
-			$(this).closest('.confirm ').hide().next().show();
+			$(this).closest('.confirm').hide().next().show();
+			
+			//var oDiv = '<div class="tips"><p>1 如果密码遗失，您可通过手机号找回密码</p><p>2 每个玩家只能注册和使用一个账号，一个手机号也只能认证一个账号。</p><p>3 更改手机号则需重新进行认证</p><i></i></div>';
+			$(this).closest('.order_r').find('>h3').addClass('h_tip').find('.tips').show();
+			
+		});
+		
+		$('.p1 .emails >button').click(function(){
+			$('.p1').hide().next('.p2').show();
+		});
+		
+		$('.order .list_tab tr.ok td a.detail').click(function(){
+			$('body').addClass('h100');
+			var oDiv = $(this).next().clone();
+			$('.lv').show().append(oDiv).find('.l_detail').show();
+			
+			
+			$('span.close').click(function(){
+				$('body').removeClass('h100');
+				$('.lv').hide();
+			})
 		})
+		
+	})();
+	
+	
+	(function(){
+		$('.operat #all').click(function(){
+			$('.hf_list >li').each(function(){
+				$(this).find('input').attr('checked','true');
+			})
+		});
+		
+		$('.operat #delete').click(function(){
+			$('.hf_list >li').each(function(){
+				//alert($(this).find('input').prop('checked'))
+				if($(this).find('input').prop('checked')){
+					$(this).remove();
+				}
+			});
+		})
+		
 		
 	})();
 	
@@ -161,6 +201,14 @@ $(function(){
 			}
 		)
 		
+	})();
+	
+	
+	(function(){
+		$('.sign_ul >li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#sign_box').find('form').eq($(this).index()).addClass('show').siblings().removeClass('show');
+		});
 	})();
 	
 	

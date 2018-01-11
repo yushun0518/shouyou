@@ -22,7 +22,7 @@
 
 				    <ul class="navbar-toggle nav_tab" data-toggle="collapse" data-target=".navbar-collapse">
 				    	<li><a href="#">登录</a><span>|</span></li>
-				    	<li><a href="#">注册</a></li>
+				    	<li><a href="#" class="active">注册</a></li>
 				    </ul>
 					<a href="index.html" class="navbar-brand nav-logo">
 						<img src="images/logo.png"/>
@@ -43,14 +43,14 @@
 							<a href="#" class="flzx">福利中心</a>
 						</li>
 						<li>
-							<a href="#" class="sypt">手游平台<span>|</span></a>
+							<a href="#" class="sypt">手游平台</a>
 						</li>
 						<li>
-							<a href="#" class="grzx">个人中心</a>
+							<a href="#" class="signin sele">注册</a>
 
 						</li>
 						<li>
-							<a href="#" class="exit">退出</a>
+							<a href="#" class="signup">登录</a>
 						</li>
 					</ul>
 				</div>
@@ -58,26 +58,56 @@
 			</div>
 
 		</nav>
-	<section class="lc_buy gy_service">
-		<div class="container">
-			<div class="row">
-				<div class="service joint">
-					<h2><span>商务合作</span></h2>
-					<p class="tip">如果您想寻求商务合作，请与我们联系。请关注我们的公共号进行留言，或者通过右侧邮件的方式联系我们。</p>
-					<div class="connect">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cbox">
-							<h2>公众号</h2>
-							<img src="images/ercode1.png" class="img-responsive"/>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cbox">
-							<h2>商务合作</h2>
-							<p>商务邮箱：bd@magicoranges.com</p>
-							<p>商务 qq：27564527</p>
-							<p>商务电话：021-61728488</p>
-						</div>
-					</div>
-				</div>
+	<section class="signin signin1">
+		<ul class="sign_ul">
+			<li class="active"><span>手机找回</span></li>
+			<li><span>邮箱找回</span></li>
+		</ul>
+		<div id="sign_box">
+			<form action="#" method="post" class="pc_sign pc_sign1 show">
+			<div class="user_info user_info2">
+				<h2>登录</h2>
+				<dl class="detail clearfix">
+					<dt class="required">用户名</dt>
+					<dd>
+						<input type="text" placeholder="请输入用户名" />
+					</dd>
+					<dt class="required">手机号码</dt>
+					<dd>
+						<input type="tel" placeholder="请输入手机号" />
+					</dd>
+					<dt class="required">验证码</dt>
+					<dd class="s_yzm clearfix">
+						<input type="text" placeholder="请输入图形码" />
+						<span class="times">59s</span>
+					</dd>
+				</dl>
 			</div>
+			<!--<input type="button" value="立即注册" />-->
+			<button type="submit" class="submit">提交验证</button>
+		</form>
+		<form action="#" method="post" class="pc_sign pc_sign1">
+			<div class="user_info user_info2">
+				<h2>登录</h2>
+				<dl class="detail clearfix">
+					<dt class="required">用户名</dt>
+					<dd>
+						<input type="text" placeholder="请输入用户名" />
+					</dd>
+					<dt class="required">邮箱</dt>
+					<dd>
+						<input type="tel" placeholder="请输入手机号" />
+					</dd>
+					<dt class="required">验证码</dt>
+					<dd class="s_yzm clearfix">
+						<input type="text" placeholder="请输入图形码" />
+						<span class="times">59s</span>
+					</dd>
+				</dl>
+			</div>
+			<!--<input type="button" value="立即注册" />-->
+			<button type="submit" class="submit">提交验证</button>
+		</form>
 		</div>
 	</section>
 	<div class="footer">
@@ -99,6 +129,21 @@
 		<p class="copy_right pc_show">联系电话：021-61728488 邮箱：hr@magicoranges.com  地址：上海市虹口区塘沽路463号华虹国际大厦11楼</p>
 	</div>
 	<script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/index.js"></script>
+	<!--<script src="js/bootstrap.min.js"></script>-->
+	<script src="js/swiper.min.js"></script>
+    <<script src="js/index.js"></script>
+    <script>
+    	var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+
+    </script>
 </body>
 </html>
